@@ -4,10 +4,11 @@ const todos = (state=[], actions) => {
             return[
                 ...state, {
                     id: actions.id,
-                    test: actions.text,
+                    text: actions.text,
                     completed: false
                 }
             ]
+
         case 'TOGGLE_TODO':
                 return state.map(todo => 
                     (todo.id === actions.id)
