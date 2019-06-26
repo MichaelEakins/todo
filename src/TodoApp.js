@@ -12,7 +12,7 @@ class TodoApp extends Component {
                 <View>
                     <VisibleTodos/>
                 </View>
-            </View>            
+            </View>
         );
     }
 }

@@ -10,23 +10,19 @@ class AddTodo extends Component {
 
  addTodo = (text) => {
      //Redux Store
+     console.warn(text);
     this.props.dispatch({type:'ADD_TODO', text});
     this.setState({text: ''});
  }
-
+ß
   render() {
     return (
       <View style={{ flexDirection: 'row', marginHorizontal: 20}}>
         <TextInput
             onChangeText = {(text) => this.setState({ text })}
             value = {this.state.text}
-            placeholder="Eg. Create New Todo"
-            style={{
-                backgroundColor: '#989898',
-                height: 50, 
-                flex: 1,
-                padding: 5
-            }}
+            placeholder='Add New Todo'
+            style={styles.input}
         />
         <TouchableOpacity onPress={() => this.addTodo(this.state.text)}>
             <View style={styles.iconContainer}>
