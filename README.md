@@ -1,1 +1,1 @@
-Tutorial using (React Native and Redux[https://www.youtube.com/watch?v=pyfPG7erRxI])
+Tutorial using [React Native and Redux](https://www.youtube.com/watch?v=pyfPG7erRxI)
